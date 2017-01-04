@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Professional Edition|Win32">
+      <Configuration>Professional Edition</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Professional Edition|x64">
+      <Configuration>Professional Edition</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Starter Edition|Win32">
+      <Configuration>Starter Edition</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Starter Edition|x64">
+      <Configuration>Starter Edition</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A95484AC-AD03-4BC5-B512-C935B6300FDE}</ProjectGuid>
+    <RootNamespace>Controller</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <SccProjectName>Perforce Project</SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SERVER_EDITION;DB_MYSQL;WIN32;_WINDOWS;_DEBUG;_MEDIALIBRARY2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)SupportLib/utilities;$(SolutionDir)3rdlibs/include;$(SolutionDir)SupportLib;$(SolutionDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm512 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libMinHookd.x86.lib;CrashRptd.lib;MediaLibrary2.lib;ThumbnailLib.lib;tinyxmld.lib;MediaInfod.lib;Zenlibd.lib;zlibstatd.lib;msi.lib;Cryptui.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdlibs/lib;$(OutDir)</AdditionalLibraryDirectories>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SERVER_EDITION;DB_MYSQL;WIN32;_WINDOWS;_DEBUG;_MEDIALIBRARY2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)SupportLib/utilities;$(SolutionDir)3rdlibs/include;$(SolutionDir)SupportLib;$(SolutionDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm512 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libMinHookd.lib;CrashRptd.lib;MediaLibrary2.lib;ThumbnailLib.lib;tinyxmld.lib;MediaInfod.lib;Zenlibd.lib;zlibstatd.lib;msi.lib;Cryptui.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdlibs/lib64;$(OutDir)</AdditionalLibraryDirectories>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SERVER_EDITION;DB_MYSQL;WIN32;_WINDOWS;NDEBUG;_MEDIALIBRARY2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)SupportLib/utilities/;$(SolutionDir)3rdlibs/include;$(SolutionDir)SupportLib;$(SolutionDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm512 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libMinHook.x86.lib;CrashRpt.lib;MediaLibrary2.lib;ThumbnailLib.lib;tinyxml.lib;MediaInfo.lib;Zenlib.lib;zlibstat.lib;msi.lib;Cryptui.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdlibs/lib;$(OutDir);..\SupportLib\MediaInfoLib\Project\MSVC2010\Library\Win32\$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SERVER_EDITION;DB_MYSQL;WIN32;_WINDOWS;NDEBUG;_MEDIALIBRARY2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)SupportLib/utilities/;$(SolutionDir)3rdlibs/include;$(SolutionDir)SupportLib;$(SolutionDir)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm512 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libMinHook.lib;CrashRpt.lib;MediaLibrary2.lib;ThumbnailLib.lib;tinyxml.lib;MediaInfo.lib;Zenlib.lib;zlibstat.lib;msi.lib;Cryptui.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdlibs/lib64;$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bg.png" />
+    <None Include="res\bgLoginSetting.png" />
+    <None Include="res\bitmap11.bmp" />
+    <None Include="res\bitmap4.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\CategoryClosedSmall.bmp" />
+    <None Include="res\CategoryOpenedSmall.bmp" />
+    <None Include="res\Clear.bmp" />
+    <None Include="res\Clear32.png" />
+    <None Include="res\ClientCritical.bmp" />
+    <None Include="res\ClientDisconnected.bmp" />
+    <None Include="res\ClientLarge.bmp" />
+    <None Include="res\ClientManagerToolBarLarge.bmp" />
+    <None Include="res\ClientManagerToolBarSmall.bmp" />
+    <None Include="res\ClientMonitorToolBarLarge.bmp" />
+    <None Include="res\ClientMonitorToolBarSmall.bmp" />
+    <None Include="res\ClientNeedAttention.bmp" />
+    <None Include="res\ClientStatusWell.bmp" />
+    <None Include="res\Controller.ico" />
+    <None Include="res\Controller.rc2" />
+    <None Include="res\delete-pro.bmp" />
+    <None Include="res\delete-pro32.bmp" />
+    <None Include="res\Delete.PNG" />
+    <None Include="res\deletecolumn.cur" />
+    <None Include="res\DesignerLayer.bmp" />
+    <None Include="res\DesignerMessage.bmp" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\Filter.PNG" />
+    <None Include="res\GroupCritical.bmp" />
+    <None Include="res\GroupEmpty.bmp" />
+    <None Include="res\GroupNeedAttention.bmp" />
+    <None Include="res\GroupStatusWell.bmp" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon_audio.ico" />
+    <None Include="res\icon_empty.ico" />
+    <None Include="res\icon_layer.ico" />
+    <None Include="res\icon_message.ico" />
+    <None Include="res\ItemStatusApproved.bmp" />
+    <None Include="res\ItemStatusUnapproved.bmp" />
+    <None Include="res\largeico.bmp" />
+    <None Include="res\LayoutDesignerToolBarLarge.bmp" />
+    <None Include="res\LayoutDesignerToolBarSmall.bmp" />
+    <None Include="res\LayoutManageLarge.bmp" />
+    <None Include="res\LayoutManageSmall.bmp" />
+    <None Include="res\Loading.png" />
+    <None Include="res\LogToolBarLarge.bmp" />
+    <None Include="res\LogToolBarSmall.bmp" />
+    <None Include="res\main.bmp" />
+    <None Include="res\MediaLibaryToolBarLarge.bmp" />
+    <None Include="res\MediaLibaryToolBarLargeDisable.bmp" />
+    <None Include="res\MediaLibaryToolBarSmall.bmp" />
+    <None Include="res\MSG2.bmp" />
+    <None Include="res\new.PNG" />
+    <None Include="res\outlookl.bmp" />
+    <None Include="res\outlookl_hc.bmp" />
+    <None Include="res\Refresh.PNG" />
+    <None Include="res\Rename.PNG" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\SchedulerLarge.bmp" />
+    <None Include="res\SchedulerSmall.bmp" />
+    <None Include="res\search.bmp" />
+    <None Include="res\Search.PNG" />
+    <None Include="res\Search32.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Back.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Close.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Close_S.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Help.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Help_S.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Maximize.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Maximize_S.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Minimize.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Minimize_S.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Restore.png" />
+    <None Include="res\skin\AppCaption\SysBtn_Restore_S.png" />
+    <None Include="res\skin\Buttons\Check.png" />
+    <None Include="res\skin\Buttons\Group.png" />
+    <None Include="res\skin\Buttons\Push.png" />
+    <None Include="res\skin\Buttons\Radio.PNG" />
+    <None Include="res\skin\Scroll\Horz\Back_1.png" />
+    <None Include="res\skin\Scroll\Horz\Back_2.png" />
+    <None Include="res\skin\Scroll\Horz\Item_1.png" />
+    <None Include="res\skin\Scroll\Horz\Item_2.png" />
+    <None Include="res\skin\Scroll\Horz\Thumb.png" />
+    <None Include="res\skin\Scroll\Horz\ThumbIcon.png" />
+    <None Include="res\skin\Scroll\Vert\Back_1.png" />
+    <None Include="res\skin\Scroll\Vert\Back_2.png" />
+    <None Include="res\skin\Scroll\Vert\Item_1.png" />
+    <None Include="res\skin\Scroll\Vert\Item_2.png" />
+    <None Include="res\skin\Scroll\Vert\Thumb.png" />
+    <None Include="res\skin\Scroll\Vert\ThumbIcon.png" />
+    <None Include="res\skin\Slider\Thumb_B.png" />
+    <None Include="res\skin\Slider\Thumb_H.png" />
+    <None Include="res\skin\Slider\Thumb_L.png" />
+    <None Include="res\skin\Slider\Thumb_R.png" />
+    <None Include="res\skin\Slider\Thumb_T.png" />
+    <None Include="res\skin\Slider\Thumb_V.png" />
+    <None Include="res\skin\Style.xml" />
+    <None Include="res\startLoading.png" />
+    <None Include="res\startLoading_Chinese.png" />
+    <None Include="res\startLoading_Starter.png" />
+    <None Include="res\startLoading_Starter_Chinese.png" />
+    <None Include="res\TimetableToolBarLarge.bmp" />
+    <None Include="res\TimetableToolBarSmall.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\UserAdminLarge.bmp" />
+    <None Include="res\UserLarge.bmp" />
+    <None Include="res\UserManagerToolBarLarge.bmp" />
+    <None Include="res\UserManagerToolBarSmall.bmp" />
+    <None Include="res\UserNormalLarge.bmp" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+    <None Include="S3Types.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Controller.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Client\ClientConfigFile.cpp" />
+    <ClCompile Include="..\ControllerServerConfiguer\ControllerServerConfig.cpp" />
+    <ClCompile Include="..\MediaServer\MediaServerConfig.cpp" />
+    <ClCompile Include="AlarmFilterCtrl.cpp" />
+    <ClCompile Include="AlarmListPane.cpp" />
+    <ClCompile Include="AlarmSearchPane.cpp" />
+    <ClCompile Include="AlarmSystemPage.cpp" />
+    <ClCompile Include="amsEdit.cpp" />
+    <ClCompile Include="Appointment.cpp" />
+    <ClCompile Include="AppointmentsManager.cpp" />
+    <ClCompile Include="AsyncGrid.cpp" />
+    <ClCompile Include="BaseControllerPage.cpp" />
+    <ClCompile Include="BaseControllerPane.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_Edit.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_InplaceEdit.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_InplaceToolTipCtrl.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_Button.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_CalendarBar.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_CalendarMenuButton.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_ComboBox.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_DateTimeCtrl.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_Dialog.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_DlgImpl.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_GridCtrl.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_GridSerialize.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_GridView.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_Group.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_Pro.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_ProgressCtrl.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_ReportCtrl.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_ScrollBar.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_SliderCtrl.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_Static.cpp" />
+    <ClCompile Include="BorrowSkin\BORROW_TrackMouse.cpp" />
+    <ClCompile Include="BorrowSkin\ControllerVisualManager.cpp" />
+    <ClCompile Include="CalenderPane.cpp" />
+    <ClCompile Include="ClientChartPane.cpp" />
+    <ClCompile Include="ClientEditorCtrl.cpp" />
+    <ClCompile Include="ClientInfoCtrl.cpp" />
+    <ClCompile Include="ClientInfoPane.cpp" />
+    <ClCompile Include="ClientManagerAddGroupDlg.cpp" />
+    <ClCompile Include="ClientMonitorSettings.cpp" />
+    <ClCompile Include="ClientStatus.cpp" />
+    <ClCompile Include="CommonSetting.cpp" />
+    <ClCompile Include="DatetimeCheck.cpp" />
+    <ClCompile Include="DemoStandardDlg.cpp" />
+    <ClCompile Include="DemoStandardDlgSetting.cpp" />
+    <ClCompile Include="DemoTranslucentDlg.cpp" />
+    <ClCompile Include="DemoTranslucentDlgSetting.cpp" />
+    <ClCompile Include="DesignerWidgets.cpp" />
+    <ClCompile Include="DialogChooseClientSize.cpp" />
+    <ClCompile Include="DialogCtrlTreeBase.cpp" />
+    <ClCompile Include="DurationTimeCtrl.cpp" />
+    <ClCompile Include="EmergencyMessageDlg.cpp" />
+    <ClCompile Include="ClientManagerPage.cpp" />
+    <ClCompile Include="ClientStatePane.cpp" />
+    <ClCompile Include="ComponentListCtrl.cpp" />
+    <ClCompile Include="ComponentPane.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="ControllerFrame.cpp" />
+    <ClCompile Include="ControllerSettings.cpp" />
+    <ClCompile Include="BaseDropTarget.cpp" />
+    <ClCompile Include="DesignerPage.cpp" />
+    <ClCompile Include="DesignerGridSetting.cpp" />
+    <ClCompile Include="DialogNewUser.cpp" />
+    <ClCompile Include="ExportFilesDlg.cpp" />
+    <ClCompile Include="ExportLayoutsDlg.cpp" />
+    <ClCompile Include="FileDetail.cpp" />
+    <ClCompile Include="FileTransferDlg.cpp" />
+    <ClCompile Include="FocusEx.cpp" />
+    <ClCompile Include="FolderDialog.cpp" />
+    <ClCompile Include="GetStartIntervalDlg.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="GraphLegend.cpp" />
+    <ClCompile Include="GraphSeries.cpp" />
+    <ClCompile Include="GroupEditor.cpp" />
+    <ClCompile Include="GroupInfoCtrl.cpp" />
+    <ClCompile Include="GroupInfoCtrlNew.cpp" />
+    <ClCompile Include="GroupInfoPane.cpp" />
+    <ClCompile Include="GroupListCtrl.cpp" />
+    <ClCompile Include="GroupListPane.cpp" />
+    <ClCompile Include="ImportLayoutDlg.cpp" />
+    <ClCompile Include="InfoDisplayCtrl.cpp" />
+    <ClCompile Include="LanguageSetting.cpp" />
+    <ClCompile Include="LayerElement.cpp" />
+    <ClCompile Include="LayoutAddGroupCtrl.cpp" />
+    <ClCompile Include="LayoutCategoryCtrl.cpp" />
+    <ClCompile Include="LayoutCategoryPane.cpp" />
+    <ClCompile Include="LayoutDesignerCmds.cpp" />
+    <ClCompile Include="LayoutDesignerPane.cpp" />
+    <ClCompile Include="LayoutDesignerCtrl.cpp" />
+    <ClCompile Include="LayoutElement.cpp" />
+    <ClCompile Include="LayoutFileUtility.cpp" />
+    <ClCompile Include="LayoutInfoCtrl.cpp" />
+    <ClCompile Include="LayoutInfoPane.cpp" />
+    <ClCompile Include="LayoutListPane.cpp" />
+    <ClCompile Include="LayoutManagePage.cpp" />
+    <ClCompile Include="LayoutPropertiesPane.cpp" />
+    <ClCompile Include="LayoutPropertyMonitor.cpp" />
+    <ClCompile Include="LayoutRenameCtrl.cpp" />
+    <ClCompile Include="LayoutSearchBar.cpp" />
+    <ClCompile Include="LayoutSearchBarPane.cpp" />
+    <ClCompile Include="LayoutSettings.cpp" />
+    <ClCompile Include="LayoutTemplatesPane.cpp" />
+    <ClCompile Include="LayoutWarningCtrl.cpp" />
+    <ClCompile Include="ListCtrlEx.cpp" />
+    <ClCompile Include="LoadingStandardDlg.cpp" />
+    <ClCompile Include="LoadingTranslucentDlg.cpp" />
+    <ClCompile Include="LogFilterCtrl.cpp" />
+    <ClCompile Include="LoginDialog.cpp" />
+    <ClCompile Include="LogListPane.cpp" />
+    <ClCompile Include="LogSearchPane.cpp" />
+    <ClCompile Include="LogSystemPage.cpp" />
+    <ClCompile Include="MagicSortListCtrl.cpp" />
+    <ClCompile Include="MediaElement.cpp" />
+    <ClCompile Include="MediaFileBrowserPane.cpp" />
+    <ClCompile Include="MediaFileListCtrl.cpp" />
+    <ClCompile Include="MediaLibraryCategoryCtrl.cpp" />
+    <ClCompile Include="MediaLibraryCategoryPane.cpp" />
+    <ClCompile Include="MediaLibraryChartDlg.cpp" />
+    <ClCompile Include="MediaLibraryChartPane.cpp" />
+    <ClCompile Include="MediaLibraryInfoCtrl.cpp" />
+    <ClCompile Include="MediaLibraryInfoPane.cpp" />
+    <ClCompile Include="MediaLibraryListPane.cpp" />
+    <ClCompile Include="MediaLibraryPage.cpp" />
+    <ClCompile Include="MediaLibrarySearchBar.cpp" />
+    <ClCompile Include="MediaLibrarySearchBarPane.cpp" />
+    <ClCompile Include="MediaListBox.cpp" />
+    <ClCompile Include="MFCButtonEx.cpp" />
+    <ClCompile Include="MsgWnd.cpp" />
+    <ClCompile Include="OperationLayer.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="PreviewDownLoadDlg.cpp" />
+    <ClCompile Include="PropertyBasicContent.cpp" />
+    <ClCompile Include="PropertyCtrl.cpp" />
+    <ClCompile Include="PropertyLayer.cpp" />
+    <ClCompile Include="PropertyLayout.cpp" />
+    <ClCompile Include="PropertyMessage.cpp" />
+    <ClCompile Include="PropertyPlugin.cpp" />
+    <ClCompile Include="PropertySimplePlugin.cpp" />
+    <ClCompile Include="PropertySubCmds.cpp" />
+    <ClCompile Include="PropertyTransition.cpp" />
+    <ClCompile Include="PublishLayoutCtrl.cpp" />
+    <ClCompile Include="PublishLayoutDialog.cpp" />
+    <ClCompile Include="Register.cpp" />
+    <ClCompile Include="RejectReason.cpp" />
+    <ClCompile Include="RemoveStorage.cpp" />
+    <ClCompile Include="RenameCategory.cpp" />
+    <ClCompile Include="ReportCltAvailDlg.cpp" />
+    <ClCompile Include="ReportCltDetailDlg.cpp" />
+    <ClCompile Include="ReportCltDldDlg.cpp" />
+    <ClCompile Include="ReportCltOnlineDlg.cpp" />
+    <ClCompile Include="ReportCltPlayDlg.cpp" />
+    <ClCompile Include="ReportCltPlaySumDlg.cpp" />
+    <ClCompile Include="ReportListPane.cpp" />
+    <ClCompile Include="ReportCltStatusDlg.cpp" />
+    <ClCompile Include="ReportSystemPage.cpp" />
+    <ClCompile Include="RulerCtrl.cpp" />
+    <ClCompile Include="S3DrawObj.cpp" />
+    <ClCompile Include="S3DrawRectObj.cpp" />
+    <ClCompile Include="S3OleDropInfo.cpp" />
+    <ClCompile Include="S3RenderableObject_i.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ScheduleContinuousDeleteDlg.cpp" />
+    <ClCompile Include="ScheduleCtrl.cpp" />
+    <ClCompile Include="ScheduleCtrlCmds.cpp" />
+    <ClCompile Include="ScheduleHorizontallyCopyDlg.cpp" />
+    <ClCompile Include="ScheduleItemCtrl.cpp" />
+    <ClCompile Include="ScheduleItemPane.cpp" />
+    <ClCompile Include="ScheduleListTab.cpp" />
+    <ClCompile Include="SchedulePackageHandler.cpp" />
+    <ClCompile Include="SchedulerItemSelectPane.cpp" />
+    <ClCompile Include="SchedulerPage.cpp" />
+    <ClCompile Include="SchedulerPane.cpp" />
+    <ClCompile Include="ScheduleRangeManager.cpp" />
+    <ClCompile Include="SchedulesSelectDlg.cpp" />
+    <ClCompile Include="ScheduleVerticallyCopyDlg.cpp" />
+    <ClCompile Include="ScheduleView.cpp" />
+    <ClCompile Include="ScheduleViewStyleAlpha.cpp" />
+    <ClCompile Include="ScrollHelper.cpp" />
+    <ClCompile Include="SearchClientDlg.cpp" />
+    <ClCompile Include="SearchFileDlg.cpp" />
+    <ClCompile Include="SearchLayoutDlg.cpp" />
+    <ClCompile Include="setdpi.cpp" />
+    <ClCompile Include="SetPasswordDlg.cpp" />
+    <ClCompile Include="SimpleBrowser.cpp" />
+    <ClCompile Include="SkinDlg\Explorer.cpp" />
+    <ClCompile Include="SkinDlg\StandardDialog.cpp" />
+    <ClCompile Include="SkinDlg\TranslucentButton.cpp" />
+    <ClCompile Include="SkinDlg\TranslucentDialog.cpp" />
+    <ClCompile Include="SkinDlg\TranslucentProgressBar.cpp" />
+    <ClCompile Include="SkinDlg\TranslucentWnd.cpp" />
+    <ClCompile Include="SkinDlg\Utility.cpp" />
+    <ClCompile Include="Sortfuncs.cpp" />
+    <ClCompile Include="SplashWnd.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TemplateCtrl.cpp" />
+    <ClCompile Include="TimeTableCategoryCtrl.cpp" />
+    <ClCompile Include="TimeTableCtrl.cpp" />
+    <ClCompile Include="TimeTableCtrlCmds.cpp" />
+    <ClCompile Include="TimeTableItemManager.cpp" />
+    <ClCompile Include="TimeTableLayoutPropertyCtrl.cpp" />
+    <ClCompile Include="TimeTableLayoutPropertyPane.cpp" />
+    <ClCompile Include="TimeTablePage.cpp" />
+    <ClCompile Include="TimeTablePane.cpp" />
+    <ClCompile Include="TimeTablePropertyEditCtrl.cpp" />
+    <ClCompile Include="TimeTablePropertyEditPane.cpp" />
+    <ClCompile Include="TimetableListPane.cpp" />
+    <ClCompile Include="TimeTableView.cpp" />
+    <ClCompile Include="TimeTableViewStyleAlpha.cpp" />
+    <ClCompile Include="UploadUrlDialog.cpp" />
+    <ClCompile Include="UserEditorCtrl.cpp" />
+    <ClCompile Include="UserEditorPane.cpp" />
+    <ClCompile Include="UserListPane.cpp" />
+    <ClCompile Include="UserManagerPage.cpp" />
+    <ClCompile Include="ClientChartDlg.cpp" />
+    <ClCompile Include="UserPrivilegeEditDlg.cpp" />
+    <ClCompile Include="WorkThread.cpp" />
+    <ClCompile Include="XmlParserCommon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Client\ClientConfigFile.h" />
+    <ClInclude Include="..\ControllerServerConfiguer\ControllerServerConfig.h" />
+    <ClInclude Include="..\MediaServer\MediaServerConfig.h" />
+    <ClInclude Include="AlarmFilterCtrl.h" />
+    <ClInclude Include="AlarmListPane.h" />
+    <ClInclude Include="ALarmSearchPane.h" />
+    <ClInclude Include="AlarmSystemPage.h" />
+    <ClInclude Include="amsEdit.h" />
+    <ClInclude Include="Appointment.h" />
+    <ClInclude Include="AppointmentsManager.h" />
+    <ClInclude Include="AsyncGrid.h" />
+    <ClInclude Include="BaseControllerPage.h" />
+    <ClInclude Include="BaseControllerPane.h" />
+    <ClInclude Include="BorrowSkin\BORROW_Edit.h" />
+    <ClInclude Include="BorrowSkin\BORROW_InplaceEdit.h" />
+    <ClInclude Include="BorrowSkin\BORROW_InplaceToolTipCtrl.h" />
+    <ClInclude Include="BorrowSkin\BORROW_Button.h" />
+    <ClInclude Include="BorrowSkin\BORROW_CalendarBar.h" />
+    <ClInclude Include="BorrowSkin\BORROW_CalendarMenuButton.h" />
+    <ClInclude Include="BorrowSkin\BORROW_ComboBox.h" />
+    <ClInclude Include="BorrowSkin\BORROW_DateTimeCtrl.h" />
+    <ClInclude Include="BorrowSkin\BORROW_Dialog.h" />
+    <ClInclude Include="BorrowSkin\BORROW_DlgImpl.h" />
+    <ClInclude Include="BorrowSkin\BORROW_GridCtrl.h" />
+    <ClInclude Include="BorrowSkin\BORROW_GridSerialize.h" />
+    <ClInclude Include="BorrowSkin\BORROW_GridView.h" />
+    <ClInclude Include="BorrowSkin\BORROW_Group.h" />
+    <ClInclude Include="BorrowSkin\BORROW_Pro.h" />
+    <ClInclude Include="BorrowSkin\BORROW_ProgressCtrl.h" />
+    <ClInclude Include="BorrowSkin\BORROW_ReportCtrl.h" />
+    <ClInclude Include="BorrowSkin\BORROW_ScrollBar.h" />
+    <ClInclude Include="BorrowSkin\BORROW_SliderCtrl.h" />
+    <ClInclude Include="BorrowSkin\BORROW_Static.h" />
+    <ClInclude Include="BorrowSkin\BORROW_TrackMouse.h" />
+    <ClInclude Include="BorrowSkin\ControllerVisualManager.h" />
+    <ClInclude Include="CalenderPane.h" />
+    <ClInclude Include="ClientChartPane.h" />
+    <ClInclude Include="ClientEditorCtrl.h" />
+    <ClInclude Include="ClientInfoCtrl.h" />
+    <ClInclude Include="ClientInfoPane.h" />
+    <ClInclude Include="ClientManagerAddGroupDlg.h" />
+    <ClInclude Include="ClientMonitorSettings.h" />
+    <ClInclude Include="ClientStatus.h" />
+    <ClInclude Include="Cmds.h" />
+    <ClInclude Include="CommonSetting.h" />
+    <ClInclude Include="DatetimeCheck.h" />
+    <ClInclude Include="DemoStandardDlg.h" />
+    <ClInclude Include="DemoStandardDlgSetting.h" />
+    <ClInclude Include="DemoTranslucentDlg.h" />
+    <ClInclude Include="DemoTranslucentDlgSetting.h" />
+    <ClInclude Include="DialogChooseClientSize.h" />
+    <ClInclude Include="DialogCtrlTreeBase.h" />
+    <ClInclude Include="DurationCtrlTheme.h" />
+    <ClInclude Include="DurationTimeCtrl.h" />
+    <ClInclude Include="EmergencyMessageDlg.h" />
+    <ClInclude Include="ClientManagerPage.h" />
+    <ClInclude Include="ClientStatePane.h" />
+    <ClInclude Include="ComponentListCtrl.h" />
+    <ClInclude Include="ComponentPane.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="ControllerFrame.h" />
+    <ClInclude Include="ControllerSettings.h" />
+    <ClInclude Include="BaseDropTarget.h" />
+    <ClInclude Include="DesignerPage.h" />
+    <ClInclude Include="DesignerGridSetting.h" />
+    <ClInclude Include="DialogNewUser.h" />
+    <ClInclude Include="EasySize.h" />
+    <ClInclude Include="ExportFilesDlg.h" />
+    <ClInclude Include="ExportLayoutsDlg.h" />
+    <ClInclude Include="FileDetail.h" />
+    <ClInclude Include="FileTransferDlg.h" />
+    <ClInclude Include="FocusEx.h" />
+    <ClInclude Include="FolderDialog.h" />
+    <ClInclude Include="GetStartIntervalDlg.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GraphLegend.h" />
+    <ClInclude Include="GraphSeries.h" />
+    <ClInclude Include="GroupEditor.h" />
+    <ClInclude Include="GroupInfoCtrl.h" />
+    <ClInclude Include="GroupInfoCtrlNew.h" />
+    <ClInclude Include="GroupInfoPane.h" />
+    <ClInclude Include="GroupListCtrl.h" />
+    <ClInclude Include="GroupListPane.h" />
+    <ClInclude Include="ImportLayoutDlg.h" />
+    <ClInclude Include="InfoDisplayCtrl.h" />
+    <ClInclude Include="LanguageSetting.h" />
+    <ClInclude Include="LayerElement.h" />
+    <ClInclude Include="LayoutAddGroupCtrl.h" />
+    <ClInclude Include="LayoutCategoryCtrl.h" />
+    <ClInclude Include="LayoutCategoryPane.h" />
+    <ClInclude Include="LayoutDesignerCmds.h" />
+    <ClInclude Include="LayoutDesignerPane.h" />
+    <ClInclude Include="LayoutDesignerCtrl.h" />
+    <ClInclude Include="LayoutElement.h" />
+    <ClInclude Include="LayoutFileUtility.h" />
+    <ClInclude Include="LayoutInfoCtrl.h" />
+    <ClInclude Include="LayoutInfoPane.h" />
+    <ClInclude Include="LayoutListPane.h" />
+    <ClInclude Include="LayoutManagePage.h" />
+    <ClInclude Include="LayoutPropertiesPane.h" />
+    <ClInclude Include="LayoutPropertyMonitor.h" />
+    <ClInclude Include="LayoutRenameCtrl.h" />
+    <ClInclude Include="LayoutSearchBar.h" />
+    <ClInclude Include="LayoutSearchBarPane.h" />
+    <ClInclude Include="LayoutSettings.h" />
+    <ClInclude Include="LayoutTemplatesPane.h" />
+    <ClInclude Include="LayoutWarningCtrl.h" />
+    <ClInclude Include="ListCtrlEx.h" />
+    <ClInclude Include="LoadingStandardDlg.h" />
+    <ClInclude Include="LoadingTranslucentDlg.h" />
+    <ClInclude Include="LogFilterCtrl.h" />
+    <ClInclude Include="LoginDialog.h" />
+    <ClInclude Include="LogListPane.h" />
+    <ClInclude Include="LogSearchPane.h" />
+    <ClInclude Include="LogSystemPage.h" />
+    <ClInclude Include="MagicSortListCtrl.h" />
+    <ClInclude Include="MediaElement.h" />
+    <ClInclude Include="MediaFileBrowserPane.h" />
+    <ClInclude Include="MediaFileListCtrl.h" />
+    <ClInclude Include="MediaLibraryCategoryCtrl.h" />
+    <ClInclude Include="MediaLibraryCategoryPane.h" />
+    <ClInclude Include="MediaLibraryChartDlg.h" />
+    <ClInclude Include="MediaLibraryChartPane.h" />
+    <ClInclude Include="MediaLibraryInfoCtrl.h" />
+    <ClInclude Include="MediaLibraryInfoPane.h" />
+    <ClInclude Include="MediaLibraryListPane.h" />
+    <ClInclude Include="MediaLibraryPage.h" />
+    <ClInclude Include="MediaLibrarySearchBar.h" />
+    <ClInclude Include="MediaLibrarySearchBarPane.h" />
+    <ClInclude Include="MediaListBox.h" />
+    <ClInclude Include="MFCButtonEx.h" />
+    <ClInclude Include="MsgWnd.h" />
+    <ClInclude Include="OperationLayer.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="PreviewDownLoadDlg.h" />
+    <ClInclude Include="PropertyBasicContent.h" />
+    <ClInclude Include="PropertyCtrl.h" />
+    <ClInclude Include="PropertyLayer.h" />
+    <ClInclude Include="PropertyLayout.h" />
+    <ClInclude Include="PropertyMessage.h" />
+    <ClInclude Include="PropertyPlugin.h" />
+    <ClInclude Include="PropertySimplePlugin.h" />
+    <ClInclude Include="PropertySubCmds.h" />
+    <ClInclude Include="PropertyTransition.h" />
+    <ClInclude Include="PublishLayoutCtrl.h" />
+    <ClInclude Include="PublishLayoutDialog.h" />
+    <ClInclude Include="Register.h" />
+    <ClInclude Include="RejectReason.h" />
+    <ClInclude Include="RemoveStorage.h" />
+    <ClInclude Include="RenameCategory.h" />
+    <ClInclude Include="ReportCltAvailDlg.h" />
+    <ClInclude Include="ReportCltDetailDlg.h" />
+    <ClInclude Include="ReportCltDldDlg.h" />
+    <ClInclude Include="ReportCltOnlineDlg.h" />
+    <ClInclude Include="ReportCltPlayDlg.h" />
+    <ClInclude Include="ReportCltPlaySumDlg.h" />
+    <ClInclude Include="ReportListPane.h" />
+    <ClInclude Include="ReportCltStatusDlg.h" />
+    <ClInclude Include="ReportSystemPage.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RulerCtrl.h" />
+    <ClInclude Include="S3DrawObj.h" />
+    <ClInclude Include="S3DrawRectObj.h" />
+    <ClInclude Include="S3OleDropInfo.h" />
+    <ClInclude Include="S3RenderableObjectguids.h" />
+    <ClInclude Include="S3RenderableObject_h.h" />
+    <ClInclude Include="S3Types.h" />
+    <ClInclude Include="ScheduleContinuousDeleteDlg.h" />
+    <ClInclude Include="ScheduleCtrl.h" />
+    <ClInclude Include="ScheduleCtrlCmds.h" />
+    <ClInclude Include="ScheduleCtrlTypes.h" />
+    <ClInclude Include="ScheduleHorizontallyCopyDlg.h" />
+    <ClInclude Include="ScheduleItemCtrl.h" />
+    <ClInclude Include="ScheduleItemPane.h" />
+    <ClInclude Include="ScheduleListTab.h" />
+    <ClInclude Include="SchedulePackageHandler.h" />
+    <ClInclude Include="SchedulerItemSelectPane.h" />
+    <ClInclude Include="SchedulerPage.h" />
+    <ClInclude Include="SchedulerPane.h" />
+    <ClInclude Include="ScheduleRangeManager.h" />
+    <ClInclude Include="SchedulesSelectDlg.h" />
+    <ClInclude Include="ScheduleVerticallyCopyDlg.h" />
+    <ClInclude Include="ScheduleView.h" />
+    <ClInclude Include="ScheduleViewStyleAlpha.h" />
+    <ClInclude Include="ScrollHelper.h" />
+    <ClInclude Include="SearchClientDlg.h" />
+    <ClInclude Include="SearchFileDlg.h" />
+    <ClInclude Include="SearchLayoutDlg.h" />
+    <ClInclude Include="setdpi.h" />
+    <ClInclude Include="SetPasswordDlg.h" />
+    <ClInclude Include="SimpleBrowser.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SkinDlg\Explorer.h" />
+    <ClInclude Include="SkinDlg\StandardDialog.h" />
+    <ClInclude Include="SkinDlg\TranslucentButton.h" />
+    <ClInclude Include="SkinDlg\TranslucentDialog.h" />
+    <ClInclude Include="SkinDlg\TranslucentProgressBar.h" />
+    <ClInclude Include="SkinDlg\TranslucentWnd.h" />
+    <ClInclude Include="SkinDlg\Utility.h" />
+    <ClInclude Include="Sortfuncs.h" />
+    <ClInclude Include="SplashWnd.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TemplateCtrl.h" />
+    <ClInclude Include="TimeTableCategoryCtrl.h" />
+    <ClInclude Include="TimeTableCtrl.h" />
+    <ClInclude Include="TimeTableCtrlCmds.h" />
+    <ClInclude Include="TimeTableCtrlType.h" />
+    <ClInclude Include="TimeTableItemManager.h" />
+    <ClInclude Include="TimeTableLayoutPropertyCtrl.h" />
+    <ClInclude Include="TimeTableLayoutPropertyPane.h" />
+    <ClInclude Include="TimeTablePage.h" />
+    <ClInclude Include="TimeTablePane.h" />
+    <ClInclude Include="TimeTablePropertyEditCtrl.h" />
+    <ClInclude Include="TimeTablePropertyEditPane.h" />
+    <ClInclude Include="TimetableListPane.h" />
+    <ClInclude Include="TimeTableView.h" />
+    <ClInclude Include="TimeTableViewStyleAlpha.h" />
+    <ClInclude Include="UploadUrlDialog.h" />
+    <ClInclude Include="UserEditorCtrl.h" />
+    <ClInclude Include="UserEditorPane.h" />
+    <ClInclude Include="UserListPane.h" />
+    <ClInclude Include="UserManagerPage.h" />
+    <ClInclude Include="ClientChartDlg.h" />
+    <ClInclude Include="UserPrivilegeEditDlg.h" />
+    <ClInclude Include="WorkThread.h" />
+    <ClInclude Include="XmlParserCommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SupportLib\CommonLib\CommonLib.vcxproj">
+      <Project>{0806eb76-650b-4f74-b50d-ddc0a0e56ad1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\CommonUI\CommonUI.vcxproj">
+      <Project>{b8b2338a-60da-45ad-acdf-6e640a4ac4d5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\ControllerClient\ControllerClient.vcxproj">
+      <Project>{deb6fec0-1640-4a08-a14e-36c444bb56d2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\ControllerServerLib\ControllerServerLib.vcxproj">
+      <Project>{d49b0bc6-484e-4eb9-9323-4b9fb1c914b6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\Localization\Localization.vcxproj">
+      <Project>{cb83af97-43cc-49ee-b8ab-90c3d36b5406}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\MediaLibrary 2\MediaLibrary2.vcxproj">
+      <Project>{b17601ae-7487-49e2-8dee-48ee20c991c5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\MediaServerLib\MediaServerLib.vcxproj">
+      <Project>{82b1de04-bf20-4d0b-8735-c34de4465c01}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\Utilities\Utilities.vcxproj">
+      <Project>{9a6cfbd6-9347-47d6-9121-4ac3e81bb0e1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportLib\winverify\winverify.vcxproj">
+      <Project>{019cdc67-cc1d-4dfe-86ff-99491252f399}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Controller.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

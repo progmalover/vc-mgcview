@@ -1,0 +1,1799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ClientManager">
+      <UniqueIdentifier>{114c9dd1-3c81-44be-aec1-01c0ada6d0f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Designer">
+      <UniqueIdentifier>{35b33c1f-ec58-470b-a7f0-731af7bdf17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scheduler">
+      <UniqueIdentifier>{e3ea25ac-4687-4502-8357-b0ddc0e04c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LogSystem">
+      <UniqueIdentifier>{972d504c-044e-4c1d-a253-5ef77e3cc863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserManager">
+      <UniqueIdentifier>{aa541ad5-ae8c-4ffb-9ea4-916fc28f32e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings">
+      <UniqueIdentifier>{a7034aa4-faa6-4664-886d-f1609de6a24f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scheduler\SchedulerCtrl">
+      <UniqueIdentifier>{ddcb45b0-104c-47e2-93dd-827ca37e8839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Designer\LayoutCtrl">
+      <UniqueIdentifier>{8058d770-d5d9-496e-aef2-94441a354175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Designer\PropertyPane">
+      <UniqueIdentifier>{519b6473-1b0e-475a-8794-7123490e4ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\toolbars">
+      <UniqueIdentifier>{85d70319-5e52-40e5-a29d-dbe01f72e9e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\toolbars\16x16">
+      <UniqueIdentifier>{3b14cecf-e2ea-4818-8836-8a040cdbe58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\toolbars\32x32">
+      <UniqueIdentifier>{ce08121e-fe59-4fee-93ed-d88155f037ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SkinDlgCore">
+      <UniqueIdentifier>{c031cbd6-ff74-43f9-8244-ca9766fa04c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LoadingDlg">
+      <UniqueIdentifier>{26510152-7321-4864-ad66-fdbe3b9f046e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\UserIcons">
+      <UniqueIdentifier>{f5b57b27-e201-40fd-8594-fe8fcb72f3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\GroupIcons">
+      <UniqueIdentifier>{8f1a9046-2628-4cad-8c32-553ffa53699c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ClientIcons">
+      <UniqueIdentifier>{4df536c8-632d-4be7-b016-15ef61a347d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\DesignerIcons">
+      <UniqueIdentifier>{246df4c8-cee7-4968-a938-b441dc11d65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SkinDlgDemoLogin">
+      <UniqueIdentifier>{7fa328d7-effd-4432-9128-5211f87b4cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProfesionalEditionRelated">
+      <UniqueIdentifier>{c78d2ed8-cc4a-4994-b959-d4ec13a4a578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BorrowSkin">
+      <UniqueIdentifier>{84c2e0f4-2e38-4500-a044-d56c7ffd8ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\VisualManager">
+      <UniqueIdentifier>{ff0a76f2-12de-4f75-bccc-6ff1b717de9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\VisualManager\Slider">
+      <UniqueIdentifier>{667b5905-5f48-42f0-91b0-aa50b4f6244b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\VisualManager\AppCaption">
+      <UniqueIdentifier>{111ef6f0-9249-4b19-83e9-e6b07f986026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\VisualManager\Scroll">
+      <UniqueIdentifier>{17e65148-f5f5-42d9-9a20-b8d68cc8e9ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\VisualManager\Buttons">
+      <UniqueIdentifier>{6a0f40bf-9eed-40d6-9f71-a030987ebf82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\VisualManager\Scroll\Horz">
+      <UniqueIdentifier>{da69e04a-4caa-4160-b091-6fc1ab2d4139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\VisualManager\Scroll\Vert">
+      <UniqueIdentifier>{d30a78f0-2ee9-4d45-9d0b-7dbe176a99e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CommonFiles">
+      <UniqueIdentifier>{48f83ddd-ae2e-4a87-b10b-b2801c61483c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeTable">
+      <UniqueIdentifier>{3bb0de30-ded1-47db-8315-2fea06afffb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MediaLibrary">
+      <UniqueIdentifier>{0b3250c9-45bf-4c73-a471-7d55eff523d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeTable\TimeTableCtrl">
+      <UniqueIdentifier>{9699f3d3-ade7-4fac-a76e-1e4b0a3d0b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LayoutManager">
+      <UniqueIdentifier>{f9244acc-f684-4492-a471-c4d7274be459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ReportSystem">
+      <UniqueIdentifier>{a482653a-46cb-4a47-af2e-df5bede2e62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeTable\StarterEditionRelated">
+      <UniqueIdentifier>{b213ac03-05f2-455f-a9e6-cdf09a85bdd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\XmlParse">
+      <UniqueIdentifier>{c0d9fee5-3fc5-418a-ac08-8e8c80d711ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\buttons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Controller.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Controller.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\largeico.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ClientManagerToolBarLarge.bmp">
+      <Filter>Resource Files\toolbars\32x32</Filter>
+    </None>
+    <None Include="res\LayoutDesignerToolBarLarge.bmp">
+      <Filter>Resource Files\toolbars\32x32</Filter>
+    </None>
+    <None Include="res\LogToolBarLarge.bmp">
+      <Filter>Resource Files\toolbars\32x32</Filter>
+    </None>
+    <None Include="res\SchedulerLarge.bmp">
+      <Filter>Resource Files\toolbars\32x32</Filter>
+    </None>
+    <None Include="res\UserManagerToolBarLarge.bmp">
+      <Filter>Resource Files\toolbars\32x32</Filter>
+    </None>
+    <None Include="res\ClientManagerToolBarSmall.bmp">
+      <Filter>Resource Files\toolbars\16x16</Filter>
+    </None>
+    <None Include="res\UserManagerToolBarSmall.bmp">
+      <Filter>Resource Files\toolbars\16x16</Filter>
+    </None>
+    <None Include="res\LayoutDesignerToolBarSmall.bmp">
+      <Filter>Resource Files\toolbars\16x16</Filter>
+    </None>
+    <None Include="res\LogToolBarSmall.bmp">
+      <Filter>Resource Files\toolbars\16x16</Filter>
+    </None>
+    <None Include="res\SchedulerSmall.bmp">
+      <Filter>Resource Files\toolbars\16x16</Filter>
+    </None>
+    <None Include="res\ClientMonitorToolBarLarge.bmp">
+      <Filter>Resource Files\toolbars\32x32</Filter>
+    </None>
+    <None Include="res\ClientMonitorToolBarSmall.bmp">
+      <Filter>Resource Files\toolbars\16x16</Filter>
+    </None>
+    <None Include="res\bg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Loading.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ClientLarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\UserLarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\UserAdminLarge.bmp">
+      <Filter>Resource Files\UserIcons</Filter>
+    </None>
+    <None Include="res\UserNormalLarge.bmp">
+      <Filter>Resource Files\UserIcons</Filter>
+    </None>
+    <None Include="res\DesignerMessage.bmp">
+      <Filter>Resource Files\DesignerIcons</Filter>
+    </None>
+    <None Include="res\DesignerLayer.bmp">
+      <Filter>Resource Files\DesignerIcons</Filter>
+    </None>
+    <None Include="res\icon_layer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon_message.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ClientCritical.bmp">
+      <Filter>Resource Files\ClientIcons</Filter>
+    </None>
+    <None Include="res\ClientDisconnected.bmp">
+      <Filter>Resource Files\ClientIcons</Filter>
+    </None>
+    <None Include="res\ClientStatusWell.bmp">
+      <Filter>Resource Files\ClientIcons</Filter>
+    </None>
+    <None Include="res\bgLoginSetting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon_audio.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon_empty.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\skin\Style.xml">
+      <Filter>Resource Files\VisualManager</Filter>
+    </None>
+    <None Include="res\skin\Slider\Thumb_B.png">
+      <Filter>Resource Files\VisualManager\Slider</Filter>
+    </None>
+    <None Include="res\skin\Slider\Thumb_H.png">
+      <Filter>Resource Files\VisualManager\Slider</Filter>
+    </None>
+    <None Include="res\skin\Slider\Thumb_L.png">
+      <Filter>Resource Files\VisualManager\Slider</Filter>
+    </None>
+    <None Include="res\skin\Slider\Thumb_R.png">
+      <Filter>Resource Files\VisualManager\Slider</Filter>
+    </None>
+    <None Include="res\skin\Slider\Thumb_T.png">
+      <Filter>Resource Files\VisualManager\Slider</Filter>
+    </None>
+    <None Include="res\skin\Slider\Thumb_V.png">
+      <Filter>Resource Files\VisualManager\Slider</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Back.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Close.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Close_S.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Help.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Help_S.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Maximize.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Maximize_S.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Minimize.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Minimize_S.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Restore.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\AppCaption\SysBtn_Restore_S.png">
+      <Filter>Resource Files\VisualManager\AppCaption</Filter>
+    </None>
+    <None Include="res\skin\Buttons\Check.png">
+      <Filter>Resource Files\VisualManager\Buttons</Filter>
+    </None>
+    <None Include="res\skin\Buttons\Group.png">
+      <Filter>Resource Files\VisualManager\Buttons</Filter>
+    </None>
+    <None Include="res\skin\Buttons\Push.png">
+      <Filter>Resource Files\VisualManager\Buttons</Filter>
+    </None>
+    <None Include="res\skin\Buttons\Radio.PNG">
+      <Filter>Resource Files\VisualManager\Buttons</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Horz\Back_1.png">
+      <Filter>Resource Files\VisualManager\Scroll\Horz</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Horz\Back_2.png">
+      <Filter>Resource Files\VisualManager\Scroll\Horz</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Horz\Item_1.png">
+      <Filter>Resource Files\VisualManager\Scroll\Horz</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Horz\Item_2.png">
+      <Filter>Resource Files\VisualManager\Scroll\Horz</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Horz\Thumb.png">
+      <Filter>Resource Files\VisualManager\Scroll\Horz</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Horz\ThumbIcon.png">
+      <Filter>Resource Files\VisualManager\Scroll\Horz</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Vert\Back_1.png">
+      <Filter>Resource Files\VisualManager\Scroll\Vert</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Vert\Back_2.png">
+      <Filter>Resource Files\VisualManager\Scroll\Vert</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Vert\Item_1.png">
+      <Filter>Resource Files\VisualManager\Scroll\Vert</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Vert\Item_2.png">
+      <Filter>Resource Files\VisualManager\Scroll\Vert</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Vert\Thumb.png">
+      <Filter>Resource Files\VisualManager\Scroll\Vert</Filter>
+    </None>
+    <None Include="res\skin\Scroll\Vert\ThumbIcon.png">
+      <Filter>Resource Files\VisualManager\Scroll\Vert</Filter>
+    </None>
+    <None Include="res\startLoading.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="S3Types.inl">
+      <Filter>Source Files\CommonFiles</Filter>
+    </None>
+    <None Include="res\ClientNeedAttention.bmp">
+      <Filter>Resource Files\ClientIcons</Filter>
+    </None>
+    <None Include="res\GroupCritical.bmp">
+      <Filter>Resource Files\GroupIcons</Filter>
+    </None>
+    <None Include="res\GroupEmpty.bmp">
+      <Filter>Resource Files\GroupIcons</Filter>
+    </None>
+    <None Include="res\GroupNeedAttention.bmp">
+      <Filter>Resource Files\GroupIcons</Filter>
+    </None>
+    <None Include="res\GroupStatusWell.bmp">
+      <Filter>Resource Files\GroupIcons</Filter>
+    </None>
+    <None Include="res\LayoutManageLarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LayoutManageSmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap4.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\outlookl.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\outlookl_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MediaLibaryToolBarLarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MediaLibaryToolBarSmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CategoryClosedSmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CategoryOpenedSmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TimetableToolBarLarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TimetableToolBarSmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ItemStatusApproved.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ItemStatusUnapproved.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\startLoading_Starter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap11.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MediaLibaryToolBarLargeDisable.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Delete.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Filter.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\new.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Refresh.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Rename.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Search.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\startLoading_Chinese.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\startLoading_Starter_Chinese.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\deletecolumn.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\delete-pro.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\delete-pro32.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Clear.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Clear32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\search.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Search32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MSG2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Controller.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalenderPane.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerSettings.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutDesignerPane.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupListPane.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleItemPane.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="UserEditorPane.cpp">
+      <Filter>Source Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="UserListPane.cpp">
+      <Filter>Source Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LogListPane.cpp">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LogSearchPane.cpp">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Appointment.cpp">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="AppointmentsManager.cpp">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationLayer.cpp">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleCtrl.cpp">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleView.cpp">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleViewStyleAlpha.cpp">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DesignerGridSetting.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="S3DrawObj.cpp">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="S3DrawRectObj.cpp">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutDesignerCtrl.cpp">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientManagerPage.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DesignerPage.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="LogSystemPage.cpp">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SchedulerPage.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManagerPage.cpp">
+      <Filter>Source Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SchedulerPane.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentPane.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutTemplatesPane.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaFileBrowserPane.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientEditorCtrl.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupInfoCtrl.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleItemCtrl.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFilterCtrl.cpp">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="UserEditorCtrl.cpp">
+      <Filter>Source Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleContinuousDeleteDlg.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleVerticallyCopyDlg.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleHorizontallyCopyDlg.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="SetPasswordDlg.cpp">
+      <Filter>Source Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutPropertiesPane.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyLayer.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyLayout.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyBasicContent.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyMessage.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyTransition.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleRangeManager.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentListCtrl.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateCtrl.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyCtrl.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="SchedulesSelectDlg.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyPlugin.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="SchedulePackageHandler.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertySimplePlugin.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogNewUser.cpp">
+      <Filter>Source Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaListBox.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupListCtrl.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientManagerAddGroupDlg.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutSettings.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutAddGroupCtrl.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportLayoutsDlg.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonSetting.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDlg\Explorer.cpp">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDlg\StandardDialog.cpp">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDlg\TranslucentButton.cpp">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDlg\TranslucentDialog.cpp">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDlg\TranslucentProgressBar.cpp">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDlg\TranslucentWnd.cpp">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDlg\Utility.cpp">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoStandardDlg.cpp">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoTranslucentDlg.cpp">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingStandardDlg.cpp">
+      <Filter>Source Files\LoadingDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingTranslucentDlg.cpp">
+      <Filter>Source Files\LoadingDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientMonitorSettings.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoStandardDlgSetting.cpp">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoTranslucentDlgSetting.cpp">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupEditor.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutRenameCtrl.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="Register.cpp">
+      <Filter>Source Files\ProfesionalEditionRelated</Filter>
+    </ClCompile>
+    <ClCompile Include="FocusEx.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="PublishLayoutCtrl.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutWarningCtrl.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDetail.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ControllerServerConfiguer\ControllerServerConfig.cpp">
+      <Filter>Source Files\ProfesionalEditionRelated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MediaServer\MediaServerConfig.cpp">
+      <Filter>Source Files\ProfesionalEditionRelated</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_Button.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_CalendarBar.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_CalendarMenuButton.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_ComboBox.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_DateTimeCtrl.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_Dialog.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_DlgImpl.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_Group.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_Pro.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_ProgressCtrl.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_ScrollBar.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_SliderCtrl.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_Static.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_TrackMouse.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\ControllerVisualManager.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashWnd.cpp">
+      <Filter>Source Files\LoadingDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientStatus.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviewDownLoadDlg.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseControllerPage.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseControllerPane.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDropTarget.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTransferDlg.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderDialog.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="S3OleDropInfo.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="S3RenderableObject_i.c">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleBrowser.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="EmergencyMessageDlg.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogChooseClientSize.cpp">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Client\ClientConfigFile.cpp">
+      <Filter>Source Files\TimeTable\StarterEditionRelated</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LanguageSetting.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTablePage.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableLayoutPropertyPane.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTablePropertyEditPane.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableLayoutPropertyCtrl.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTablePropertyEditCtrl.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTablePane.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryCategoryCtrl.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibrarySearchBarPane.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibrarySearchBar.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryPage.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryListPane.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryInfoPane.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryInfoCtrl.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryChartPane.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryChartDlg.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaLibraryCategoryPane.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportFilesDlg.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableCtrl.cpp">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableView.cpp">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableViewStyleAlpha.cpp">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableItemManager.cpp">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutManagePage.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutListPane.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutCategoryCtrl.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableCategoryCtrl.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="TimetableListPane.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutCategoryPane.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SchedulerItemSelectPane.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutInfoCtrl.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutInfoPane.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="RenameCategory.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleListTab.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientInfoCtrl.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientInfoPane.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientChartDlg.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientChartPane.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientStatePane.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphLegend.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphSeries.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportListPane.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportSystemPage.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCltStatusDlg.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCltDldDlg.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoDisplayCtrl.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientChartPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientChartDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCltPlayDlg.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCltPlaySumDlg.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCltDetailDlg.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCltAvailDlg.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCltOnlineDlg.cpp">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutSearchBar.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutSearchBarPane.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="UserPrivilegeEditDlg.cpp">
+      <Filter>Source Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutFileUtility.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogCtrlTreeBase.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GetStartIntervalDlg.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicSortListCtrl.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Sortfuncs.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaFileListCtrl.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="DurationTimeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RejectReason.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UploadUrlDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="setdpi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCButtonEx.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="DatetimeCheck.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollHelper.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupInfoPane.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupInfoCtrlNew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PublishLayoutDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLayoutDlg.cpp">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchFileDlg.cpp">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveStorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchClientDlg.cpp">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerCtrl.cpp">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="amsEdit.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutDesignerCmds.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutPropertyMonitor.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertySubCmds.cpp">
+      <Filter>Source Files\Designer</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleCtrlCmds.cpp">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmFilterCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmListPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmSearchPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmSystemPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTableCtrlCmds.cpp">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertySubCmds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DesignerWidgets.cpp">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_GridCtrl.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_GridSerialize.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_GridView.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_InplaceToolTipCtrl.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_InplaceEdit.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_Edit.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowSkin\BORROW_ReportCtrl.cpp">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncGrid.cpp">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerElement.cpp">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutElement.cpp">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaElement.cpp">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlParserCommon.cpp">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportLayoutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerFrame.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalenderPane.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerSettings.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutDesignerPane.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupListPane.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleItemPane.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="UserEditorPane.h">
+      <Filter>Source Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="UserListPane.h">
+      <Filter>Source Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LogListPane.h">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="LogSearchPane.h">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Appointment.h">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="AppointmentsManager.h">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="OperationLayer.h">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleCtrlTypes.h">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleCtrl.h">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleView.h">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleViewStyleAlpha.h">
+      <Filter>Source Files\Scheduler\SchedulerCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DesignerGridSetting.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="S3DrawObj.h">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="S3DrawRectObj.h">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutDesignerCtrl.h">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientManagerPage.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DesignerPage.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="LogSystemPage.h">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SchedulerPage.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManagerPage.h">
+      <Filter>Source Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SchedulerPane.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentPane.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutTemplatesPane.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaFileBrowserPane.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientEditorCtrl.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupInfoCtrl.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleItemCtrl.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFilterCtrl.h">
+      <Filter>Source Files\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="UserEditorCtrl.h">
+      <Filter>Source Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleContinuousDeleteDlg.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleHorizontallyCopyDlg.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleVerticallyCopyDlg.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="SetPasswordDlg.h">
+      <Filter>Source Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutPropertiesPane.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyLayer.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyBasicContent.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyLayout.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyMessage.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyTransition.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleRangeManager.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentListCtrl.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateCtrl.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyCtrl.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutSettings.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="SchedulesSelectDlg.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyPlugin.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="SchedulePackageHandler.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertySimplePlugin.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogNewUser.h">
+      <Filter>Source Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaListBox.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupListCtrl.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientManagerAddGroupDlg.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutAddGroupCtrl.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportLayoutsDlg.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonSetting.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDlg\Explorer.h">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDlg\StandardDialog.h">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDlg\TranslucentButton.h">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDlg\TranslucentDialog.h">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDlg\TranslucentProgressBar.h">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDlg\TranslucentWnd.h">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDlg\Utility.h">
+      <Filter>Source Files\SkinDlgCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoStandardDlg.h">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoTranslucentDlg.h">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingStandardDlg.h">
+      <Filter>Source Files\LoadingDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingTranslucentDlg.h">
+      <Filter>Source Files\LoadingDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMonitorSettings.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoStandardDlgSetting.h">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoTranslucentDlgSetting.h">
+      <Filter>Source Files\SkinDlgDemoLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupEditor.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutRenameCtrl.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="Register.h">
+      <Filter>Source Files\ProfesionalEditionRelated</Filter>
+    </ClInclude>
+    <ClInclude Include="FocusEx.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="PublishLayoutCtrl.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutWarningCtrl.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDetail.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ControllerServerConfiguer\ControllerServerConfig.h">
+      <Filter>Source Files\ProfesionalEditionRelated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MediaServer\MediaServerConfig.h">
+      <Filter>Source Files\ProfesionalEditionRelated</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_Button.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_CalendarBar.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_CalendarMenuButton.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_ComboBox.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_DateTimeCtrl.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_Dialog.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_DlgImpl.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_Group.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_Pro.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_ProgressCtrl.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_ScrollBar.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_SliderCtrl.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_Static.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_TrackMouse.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\ControllerVisualManager.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashWnd.h">
+      <Filter>Source Files\LoadingDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientStatus.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="PreviewDownLoadDlg.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="EmergencyMessageDlg.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseControllerPage.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseControllerPane.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDropTarget.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="EasySize.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTransferDlg.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderDialog.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="S3OleDropInfo.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="S3RenderableObject_h.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="S3RenderableObjectguids.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="S3Types.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleBrowser.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogChooseClientSize.h">
+      <Filter>Source Files\Designer\PropertyPane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Client\ClientConfigFile.h">
+      <Filter>Source Files\TimeTable\StarterEditionRelated</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkThread.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LanguageSetting.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTablePage.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTablePropertyEditPane.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableLayoutPropertyPane.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableLayoutPropertyCtrl.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTablePropertyEditCtrl.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTablePane.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibrarySearchBarPane.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibrarySearchBar.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryPage.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryListPane.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryInfoPane.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryInfoCtrl.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryChartPane.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryChartDlg.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryCategoryPane.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaLibraryCategoryCtrl.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportFilesDlg.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableCtrl.h">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableView.h">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableViewStyleAlpha.h">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableItemManager.h">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableCtrlType.h">
+      <Filter>Source Files\TimeTable\TimeTableCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutManagePage.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutListPane.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutCategoryCtrl.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableCategoryCtrl.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="TimetableListPane.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutCategoryPane.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SchedulerItemSelectPane.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutInfoCtrl.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutInfoPane.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="RenameCategory.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleListTab.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientInfoCtrl.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientInfoPane.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphSeries.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientChartDlg.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientChartPane.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportListPane.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportSystemPage.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCltStatusDlg.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCltDldDlg.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientStatePane.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphLegend.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoDisplayCtrl.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCltPlayDlg.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCltPlaySumDlg.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCltDetailDlg.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCltAvailDlg.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCltOnlineDlg.h">
+      <Filter>Source Files\ReportSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutSearchBar.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutSearchBarPane.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="UserPrivilegeEditDlg.h">
+      <Filter>Source Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutFileUtility.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogCtrlTreeBase.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GetStartIntervalDlg.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicSortListCtrl.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDialog.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Sortfuncs.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaFileListCtrl.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="RejectReason.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setdpi.h" />
+    <ClInclude Include="UploadUrlDialog.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DurationTimeCtrl.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DurationCtrlTheme.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCButtonEx.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DatetimeCheck.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollHelper.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupInfoPane.h">
+      <Filter>Source Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupInfoCtrlNew.h" />
+    <ClInclude Include="PublishLayoutDialog.h" />
+    <ClInclude Include="RemoveStorage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchFileDlg.h">
+      <Filter>Source Files\MediaLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLayoutDlg.h">
+      <Filter>Source Files\LayoutManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchClientDlg.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="RulerCtrl.h">
+      <Filter>Source Files\Designer\LayoutCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmds.h" />
+    <ClInclude Include="amsEdit.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutDesignerCmds.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutPropertyMonitor.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertySubCmds.h">
+      <Filter>Source Files\Designer</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleCtrlCmds.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTableCtrlCmds.h">
+      <Filter>Source Files\TimeTable</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertySubCmds.h" />
+    <ClInclude Include="ScheduleCtrlCmds.h" />
+    <ClInclude Include="AlarmFilterCtrl.h" />
+    <ClInclude Include="AlarmListPane.h" />
+    <ClInclude Include="ALarmSearchPane.h" />
+    <ClInclude Include="AlarmSystemPage.h" />
+    <ClInclude Include="BorrowSkin\BORROW_GridCtrl.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_GridSerialize.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_GridView.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_InplaceToolTipCtrl.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_InplaceEdit.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_Edit.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowSkin\BORROW_ReportCtrl.h">
+      <Filter>Source Files\BorrowSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncGrid.h">
+      <Filter>Source Files\CommonFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerElement.h">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutElement.h">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaElement.h">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlParserCommon.h">
+      <Filter>Source Files\XmlParse</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgWnd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportLayoutDlg.h" />
+  </ItemGroup>
+</Project>

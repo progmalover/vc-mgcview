@@ -1,0 +1,331 @@
+// S3RenderableObject.idl : IDL source for helper library S3RenderableObject
+// Copyright (c) 1999 - 2010, S3 Graphics.  All rights reserved.
+
+import "unknwn.idl";
+
+interface IS3ROPlayer;
+interface IS3ROAdvancedPlayer;
+interface IS3RODesigner;
+interface IS3RODesigner2;
+interface IS3RenderableObject;
+
+typedef struct __RO_THUMBNAIL_INFO{
+    int     width;//inout: width
+    int     height;//inout:height
+    //the input width and height are just hints, the output may differ from the input
+    //the designer software must handle this
+    int     pitch;//out: image pitch
+    void*   pAddr;//inout: NULL to get w, h, p, a real address to get the content.
+    //The pAddr buffer must be allocated by calling CoTaskMemAlloc in the com, and released
+    //by calling CoTaskMemFree by the caller.
+}RO_THUMBNAIL_INFO, *PRO_THUMBNAIL_INFO;
+
+#define FREE_THUMBNAIL_INFO(pInfo)\
+{\
+    if((pInfo) && (pInfo)->pAddr)\
+    {\
+        (CoTaskMemFree((pInfo)->pAddr);\
+        (pInfo)->pAddr = NULL;\
+    }\
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//   IS3RODesigner
+//
+//////////////////////////////////////////////////////////////////////////////
+[
+    local,
+    object,
+    uuid(78EFA844-ED01-4c4a-A7CC-B15DBAA349BB),
+    helpstring("IS3RODesigner Interface"),
+    pointer_default(unique)
+]
+interface IS3RODesigner : IUnknown{
+
+    HRESULT CreateDesigner(
+        [in] LPCWSTR pContent,
+        [in] LPCWSTR pPropertyStr//can be NULL, use default
+        );
+
+    HRESULT UpdateContent(
+        [in]  LPCWSTR pContent,//can be NULL, means no change
+        [in]  LPCWSTR pPropertyStr,//can be NULL, means no change
+        [out] BOOL*   pbNewThumbnail
+        );
+
+    HRESULT ConfigProperty(
+        [in]  HANDLE hWnd,
+        [in] LANGID langID,
+        [out] BOOL*  pbNewThumbnail
+        );//the designer will show a config dialog
+
+    HRESULT GenPropertyString(
+        [out] LPOLESTR* ppPropertyStr //must be freed by calling CoTaskMemFree by the caller
+        );
+
+    HRESULT GetThumbnail(
+        [out] PRO_THUMBNAIL_INFO pThunbnailImage
+        );
+};
+
+typedef enum __RO_PROPERTY_TYPE{
+    S3RO_PT_INT = 0,
+    S3RO_PT_FLOAT = 1,
+    S3RO_PT_STR = 2,
+    S3RO_PT_INTB = 3,
+    //the boolean type with INT, the minI and maxI are ignored and it can only be 0 or 1
+    //and the control type must be check box.
+    S3RO_PT_INTLIST = 4,
+    //the list with INT, the value range is between minI and maxI, the pInfoString has the
+    //following format: Title|index(must be in range) subtitle|index subtitle....
+    //|,\,and all numbers in the Title and subtitle must be prefixed 
+    //by \, e.g. \8, \122, \|, \\
+    S3RO_PT_DWALIGN = 0xFFFFFFFF
+}RO_PROPERTY_TYPE;
+
+typedef struct __RO_PROPERTY_INFO{
+    DWORD               PID;
+    RO_PROPERTY_TYPE    PType;//propertyType
+    LPOLESTR            PInfoString;
+    union{
+        struct{
+            int         defaultI;
+            int         minI;
+            int         maxI;
+        };
+        struct{
+            float       defaultF;
+            float       minF;
+            float       maxF;
+        };
+        LPOLESTR    defaultStr;//The pAddr buffer must be allocated by calling CoTaskMemAlloc in the com, and released
+        //by calling CoTaskMemFree by the caller.
+    };
+}RO_PROPERTY_INFO, *PRO_PROPERTY_INFO;
+
+#define DELETE_PROPERTY_INFO(pInfo) \
+{\
+    if((pInfo))\
+    {\
+        CoTaskMemFree((pInfo)->PInfoString);\
+        if((pInfo)->PType == S3RO_PT_STR && (pInfo)->defaultStr)\
+        {\
+            (CoTaskMemFree((pInfo)->defaultStr);\
+            (pInfo)->defaultStr = NULL;\
+        }\
+    }\
+}\
+
+#define FREE_RO_PROPERTY_BUFFER(pInfo, count) \
+{\
+    if(pInfo)\
+    {\
+        for(DWPRD i = 0; i < count; i++)\
+        {\
+            DELETE_PROPERTY_INFO((pInfo + i));\
+        }\
+        CoTaskMemFree(pInfo);\
+    }\
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//   IS3RODesigner2
+//
+//////////////////////////////////////////////////////////////////////////////
+[
+    local,
+    object,
+    uuid(30A377A9-8A1E-4908-9BF7-5E5AC03B92A4),
+    helpstring("IS3RODesigner Interface"),
+    pointer_default(unique)
+]
+interface IS3RODesigner2 : IS3RODesigner{
+
+    HRESULT GetProperties(
+        [in] LANGID langID,
+        [out] DWORD* pPropertyCount,
+        [out] PRO_PROPERTY_INFO* ppProperties
+        );
+
+    HRESULT SetPropertyI(
+        [in] DWORD PID, 
+        [in] int value,
+        [out] BOOL*  pbNewThumbnail
+        );
+
+    HRESULT SetPropertyF(
+        [in] DWORD PID, 
+        [in] float value,
+        [out] BOOL*  pbNewThumbnail
+        );
+
+    HRESULT SetPropertyS(
+        [in] DWORD PID, 
+        [in] LPCWSTR pStr,
+        [out] BOOL*  pbNewThumbnail
+        );
+};
+
+typedef struct __RO_PLAYER_PARAM{
+    SIZE    rectSize;
+    union{
+        struct{
+            int     drawBufferPitch;
+            LPVOID  pDrawBuffer;
+            //the player owner must garentee the buffer is valid in player life cycle.
+        };//used by Player
+        HANDLE hDrawObject[2];
+        //Used By Advanced Player, Lockable LPDIRECT3DTEXTURE9 on windows
+    };
+    LPCWSTR pContent;
+    LPCWSTR pSettings;
+}RO_PLAYER_PARAM, *PRO_PLAYER_PARAM;
+
+typedef struct __RO_TEXCOORD
+{
+    float       tu0;
+    float       tv0;
+    float       tu1;
+    float       tv1;
+}RO_TEXCOORD;
+
+typedef struct __RO_RENDERRECT
+{
+    RECT        theRect;
+    RO_TEXCOORD TexCoord;
+}RO_RENDERRECT, *PRO_RENDERRECT;
+
+typedef struct __RO_RENDERPARAM
+{
+    RECT            contentDirtyRect;//all 0 means no dirty
+    UINT            drawObjectIndex;//only used by AdvancedPlayer
+    BOOL            bTransparency;
+    RO_RENDERRECT   renderRect;
+}RO_RENDERPARAM, *PRO_RENDERPARAM;
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//   IS3ROPlayer
+//
+//////////////////////////////////////////////////////////////////////////////
+[
+    local,
+    object,
+    uuid(77364153-40DA-491d-BF62-8D7661297920),
+    helpstring("IS3ROPlayer Interface"),
+    pointer_default(unique)
+]
+interface IS3ROPlayer : IUnknown{
+
+    HRESULT CreatePlayer(
+        [in] PRO_PLAYER_PARAM pPlayerParam
+        );
+
+    HRESULT ChangeContent(
+        [in] LPCWSTR pContent,
+        [in] LPCWSTR pSettings
+        );
+
+    HRESULT Run( );
+
+    HRESULT Stop( );
+
+    HRESULT IsFinished( );
+
+    HRESULT PrepareRender(
+        [out] PRO_RENDERPARAM pParam
+        );
+
+    HRESULT EndRender( );
+
+    HRESULT ProcessMessage(
+        [in] UINT uMsg,
+        [in] WPARAM wParam,
+        [in] LPARAM lParam
+        );
+};
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//   IS3ROAdvanedPlayer
+//
+//////////////////////////////////////////////////////////////////////////////
+[
+    local,
+    object,
+    uuid(B7BDBC5C-BF7A-413b-99C5-2793CA78865D),
+    helpstring("IS3ROAdvancedPlayer Interface"),
+    pointer_default(unique)
+]
+interface IS3ROAdvancedPlayer : IS3ROPlayer{
+
+    HRESULT CreateAdvancedPlayer(
+        [in] PRO_PLAYER_PARAM pPlayerParam
+        );
+};
+
+typedef enum __S3RO_WORKMODE{
+    S3RO_WM_UNKOWN = 0,
+    S3RO_WM_DESIGNER = 1,
+    S3RO_WM_PLAYER = 2,
+    S3RO_DWALIGN = 0xFFFFFFFF,
+}S3RO_WORKMODE;
+
+typedef struct __RO_SUPPORTEDFILE{
+    TCHAR   FileExt[64];
+    BOOL    bPrefix;
+    DWORD   priority;
+}RO_SUPPORTEDFILE, *PRO_SUPPORTEDFILE;
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//   IS3RenderableObject
+//
+//////////////////////////////////////////////////////////////////////////////
+[
+    local,
+    object,
+    uuid(3C243A09-A5BB-4c92-8905-729BB8AF53EC),
+    helpstring("IS3RenderableObject Interface"),
+    pointer_default(unique)
+]
+interface IS3RenderableObject : IUnknown{
+
+    HRESULT GetWorkMode(
+        [out] S3RO_WORKMODE* pdwWorkMode
+        );
+
+    HRESULT GetSupportedFiles(
+        [out] DWORD* pCount,
+        [out] PRO_SUPPORTEDFILE* ppFileList //must be freed by calling CoTaskMemFree by the caller
+        );
+
+    HRESULT GetIcon(
+        [out] HANDLE* phIcon
+        );
+};
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//   Library and objects
+//
+//////////////////////////////////////////////////////////////////////////////
+[
+    uuid(9E34392D-71B8-439f-9DBB-53E470F5079D),
+    version(1.0),
+    helpstring("S3RenderableObject 1.0 Type Library")
+]
+library S3RenderableObjectLib
+{
+    // S3RenderableObject
+    [
+        uuid(4E4AFE9E-6A54-49bd-8455-52442A9974DD),
+        helpstring("S3RenderableObject Class")
+    ]
+    coclass S3RenderableObject
+    {
+        [default] interface IS3RenderableObject;
+    };
+};

@@ -1,0 +1,128 @@
+<STYLE>
+	<VERSION>
+		<NUMBER>2011</NUMBER>
+		<TYPE>11</TYPE>
+		<ID_PREFIX>S3_</ID_PREFIX>
+	</VERSION>
+	<DESCRIPTION>
+		<NAME>Aqua</NAME>
+	</DESCRIPTION>
+	<GLOBALS>
+		<DlgBackColor>213, 228, 242</DlgBackColor>
+	</GLOBALS>
+
+
+	<SLIDER>
+		<THUMB_B>
+			<SIZE>11, 22</SIZE>
+			<CORNERS>5, 10, 5, 6</CORNERS>
+		</THUMB_B>
+		<THUMB_H>
+			<SIZE>11, 22</SIZE>
+			<CORNERS>5, 10, 5, 6</CORNERS>
+		</THUMB_H>
+		<THUMB_T>
+			<SIZE>11, 22</SIZE>
+			<CORNERS>5, 10, 5, 6</CORNERS>
+		</THUMB_T>
+		<THUMB_R>
+			<SIZE>22, 11</SIZE>
+			<CORNERS>10, 5, 6, 5</CORNERS>
+		</THUMB_R>
+		<THUMB_V>
+			<SIZE>22, 11</SIZE>
+			<CORNERS>10, 5, 6, 5</CORNERS>
+		</THUMB_V>
+		<THUMB_L>
+			<SIZE>22, 11</SIZE>
+			<CORNERS>10, 5, 6, 5</CORNERS>
+		</THUMB_L>
+	</SLIDER>
+	
+	<SCROLLBAR>
+		<HORZ>
+			<BACK_1>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>1, 1, 1, 1</CORNERS>
+			</BACK_1>
+			<ITEM_1>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+			</ITEM_1>
+			<THUMB_BACK_1>
+				<SIZE>21, 17</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+			</THUMB_BACK_1>
+			<THUMB_ICON_1>
+				<SIZE>8, 7</SIZE>
+			</THUMB_ICON_1>
+			<BACK_2>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>1, 1</CORNERS>
+			</BACK_2>
+			<ITEM_2>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+			</ITEM_2>
+			<THUMB_BACK_2>
+				<SIZE>21, 17</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+			</THUMB_BACK_2>
+			<THUMB_ICON_2>
+				<SIZE>8, 7</SIZE>
+			</THUMB_ICON_2>
+		</HORZ>
+		<VERT>
+			<BACK_1>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>1, 1, 1, 1</CORNERS>
+			</BACK_1>
+			<ITEM_1>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+			</ITEM_1>
+			<THUMB_BACK_1>
+				<SIZE>17, 21</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+			</THUMB_BACK_1>
+			<THUMB_ICON_1>
+				<SIZE>7, 8</SIZE>
+			</THUMB_ICON_1>
+			<BACK_2>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>1, 1</CORNERS>
+			</BACK_2>
+			<ITEM_2>
+				<SIZE>17, 17</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+			</ITEM_2>
+			<THUMB_BACK_2>
+				<SIZE>17, 21</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+			</THUMB_BACK_2>
+			<THUMB_ICON_2>
+				<SIZE>7, 8</SIZE>
+			</THUMB_ICON_2>
+		</VERT>
+	</SCROLLBAR>
+
+	<BUTTONS>
+		<BUTTON_CHECK>
+			<SIZE>13, 13</SIZE>
+		</BUTTON_CHECK>
+		<BUTTON_RADIO>
+			<SIZE>13, 13</SIZE>
+		</BUTTON_RADIO>
+		<BUTTON_PUSH>
+			<SIZE>22, 22</SIZE>
+			<CORNERS>2, 2, 2, 2</CORNERS>
+		</BUTTON_PUSH>
+		<BUTTON_GROUP>
+			<SIZE>7, 7</SIZE>
+			<CORNERS>3, 3, 3, 3</CORNERS>
+			<SIDES>2, 2, 2, 2</SIDES>
+		</BUTTON_GROUP>
+	</BUTTONS>
+
+
+</STYLE>
